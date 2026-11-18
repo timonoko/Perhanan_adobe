@@ -15,7 +15,7 @@ time.sleep(5)
 tiedostonimi = "kirja_vihrea.txt"
 muistissa_oleva_teksti = ""
 peräkkäiset_samat = 0
-maksimisivut = 500
+maksimisivut = 2000
 
 # Tyhjennetään tai luodaan uusi tiedosto alussa
 with open(tiedostonimi, "w", encoding="utf-8") as f:
@@ -54,8 +54,8 @@ for i in range(maksimisivut):
         print(f"Sivu kirjoitettu levykkeelle ({len(page_text)} merkkiä)")
     else:
         peräkkäiset_samat += 1
-        print(f"Ei uutta tekstiä (yritys {peräkkäiset_samat}/3)")
-        if peräkkäiset_samat >= 3:
+        print(f"Ei uutta tekstiä (yritys {peräkkäiset_samat}/10)")
+        if peräkkäiset_samat >= 10:
             print("Kirja näyttää tulleen päätökseensä.")
             break
 
