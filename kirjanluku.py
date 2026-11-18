@@ -9,7 +9,7 @@ options.add_argument("-profile")
 options.add_argument("/home/tnoko/.mozilla/selenium-profiili")
 
 driver = webdriver.Firefox(options=options)
-driver.get("https://play.google.com/books/reader?id=gn6aEQAAQBAJ&pg=GBS.PT1")
+driver.get("laita play.google.com/books URL tähän")
 time.sleep(5)
 
 tiedostonimi = "kirja_vihrea.txt"
